@@ -8,7 +8,7 @@ import recommonmark
 from recommonmark.transform import AutoStructify
 
 
-github_doc_root = 'https://github.com/lbc-team/etherscan-docs/tree/master/source/'
+github_doc_root = 'https://github.com/lbc-team/web3.js-0.2x-docs/tree/master/source/'
 
 # At the bottom of conf.py
 def setup(app):
@@ -34,12 +34,13 @@ def setup(app):
 
 # -- Project information -----------------------------------------------------
 
-project = 'Web3.js 0.20 中文文档'
+project = 'Web3.js 中文文档'
 copyright = '2019, 深入浅出区块链'
 author = 'Tiny熊'
 
 # The full version, including alpha/beta/rc tags
-release = 'Latest'
+release = '0.20'
+version = '0.20'
 
 
 # -- General configuration ---------------------------------------------------
@@ -53,19 +54,19 @@ extensions = [
 
 html_theme_options = {
     'canonical_url': '',
-    # 'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
     'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
     # 'style_nav_header_background': 'blue',
     # Toc options
-    'collapse_navigation': True,
+    'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 2,
     'includehidden': True,
-    'titles_only': False
+    'titles_only': False,
 }
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -94,3 +95,4 @@ html_theme = 'sphinx_rtd_theme'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+html_search_language = 'zh_CN'
