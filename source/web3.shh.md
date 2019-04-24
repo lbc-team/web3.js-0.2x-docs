@@ -163,4 +163,4 @@ filter.watch(function(error, result){
   - `payload`: `String` - 消息的载荷内容.
   - `workProved`: `Number` - 消息发送前需要完成的任务.
 
-***
+

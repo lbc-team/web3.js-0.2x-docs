@@ -18,7 +18,7 @@ def setup(app):
             }, True)
     app.add_transform(AutoStructify)
 
-    app.add_javascript('//s95.cnzz.com/z_stat.php?id=1265946080&web_id=1265946080')
+    # app.add_javascript('//s95.cnzz.com/z_stat.php?id=1265946080&web_id=1265946080')
 
 # -- Path setup --------------------------------------------------------------
 

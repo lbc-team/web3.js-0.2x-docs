@@ -105,4 +105,3 @@ var value = web3.db.getHex('testDB', 'key');
 console.log(value); // "0x4f554b443"
 ```
 
-***
