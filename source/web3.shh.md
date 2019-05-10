@@ -1,6 +1,7 @@
 
 ## 通信协议对象 shh
 
+在使用 web3 之前，请先确保正确[引入web3.js](index.html#import-web3)。
 Whisper是一个P2P的通信协议相关的API，这里有一个[术语解释](https://learnblockchain.cn/books/geth/term.html)，了解更多可参考[Whisper  Overview](https://github.com/ethereum/wiki/wiki/Whisper-Overview)
 
 

@@ -1,5 +1,7 @@
 # 主对象 web3 
 
+  在使用 web3 之前，请先确保正确[引入web3.js](index.html#import-web3)。
+  
 ## web3
 
  `web3` 对象提供了所有方法

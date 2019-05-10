@@ -6,18 +6,29 @@ Web3.js 0.20 使用说明
 尊重汗水，需转载请联系微信：xlbxiong 获取授权。
 
 
-
-web3简介
+web3.js简介
 ==================
+
+Web3是一套和以太坊节点进行通信的API，如果我们需要基于以太坊来开发去中心化应用，就可能需要使用web3（或者使用 `ethers.js <https://learnblockchain.cn/docs/ethers.js/>`_  ），例如需要通过Web3来获取节点状态，获取账号信息，调用合约、监听合约事件等等。
+
+  译者注: 智能合约是运行在节点提供的虚拟机上，因此调用智能合约也需要像节点发送请求。
+
+web3.js 是 Web3 协议的 JavaScript 实现版本，其他的多个语言版本的实现有
+
+* `Python Web3.py <https://github.com/ethereum/web3.py>`_
+* `Haskell hs-web3 <https://github.com/airalab/hs-web3>`_
+* `Java web3j <https://github.com/web3j/web3j>`_
+* `Scala web3j-scala <https://github.com/mslinn/web3j-scala>`_
+* `Purescript purescript-web3 <https://github.com/f-o-a-m/purescript-web3>`_
+* `PHP web3.php <https://github.com/sc0Vu/web3.php>`_
+* `PHP ethereum-php <https://github.com/digitaldonkey/ethereum-php>`_
+
 
 注意 web3.js 有两个不兼容的版本：0.20.x及1.0beta，1.0对0.20版本做了重构。
 
 **本文档是web3.js 0.20.x版本翻译**，其对应的官方文档地址在 `JavaScript-API <https://github.com/ethereum/wiki/wiki/JavaScript-API>`_ 。
 如果你使用的是 web3.js 1.0版本，其对应的官方文档地址在 `Web3js Readthedocs <http://web3js.readthedocs.io/en/1.0/index.html>`_ 。
 
-Web3是一套和以太坊节点进行通信的API，如果我们需要基于以太坊来开发去中心化应用，则web3是必须要了解的内容，例如需要通过Web3来获取节点状态，获取账号信息，调用合约、监听合约事件等等。
-
-  译者注: 智能合约是运行在节点提供的虚拟机上，因此调用智能合约也需要像节点发送请求。
 
 基于以太坊开发DApp（去中心化应用程序），可以使用 `web3.js库  <https://github.com/ethereum/web3.js>`_ 提供的 **web3** 对象， 在底层实现上， **web3** 通 过 `RPC调用  <https://github.com/ethereum/wiki/wiki/JSON-RPC>`_ 与本地节点通信， **web3.js** 可以与任何暴露了RPC接口的以太坊节点连接。
 
@@ -37,6 +48,9 @@ Web3是一套和以太坊节点进行通信的API，如果我们需要基于以�
 - `Dapp 模式  <https://github.com/ethereum/wiki/wiki/Useful-Ðapp-Patterns>`_
 
 想要学习去中心化应用(DAPP)开发，这门课程不容错过 `区块链全栈-以太坊DAPP开发实战  <https://wiki.learnblockchain.cn/course/dapp.html>`_
+
+
+.. _import-web3:
 
 引入web3
 ==================

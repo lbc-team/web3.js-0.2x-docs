@@ -1,5 +1,6 @@
 # 数据对象 db
 
+在使用 web3 之前，请先确保正确[引入web3.js](index.html#import-web3)。
 **web3.db** 存储数据相关的接口
 
 ## web3.db.putString

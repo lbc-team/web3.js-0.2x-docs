@@ -1,5 +1,6 @@
 # 以太坊交互对象 eth
 
+在使用 web3 之前，请先确保正确[引入web3.js](index.html#import-web3)。
  **web3.eth** 包含以太坊区块链进行交互方法
 
 ## web3.eth.defaultAccount
@@ -1087,7 +1088,11 @@ var filter = myContractInstance.myEvent({a: 5}, function (error, result) {
 
 ***
 
-## 调用合约方法 Contract Methods
+```eval_rst
+.. _Contract Methods:
+```
+
+## 调用合约方法 
 
 ```js
 // Automatically determines the use of call or sendTransaction based on the method type
@@ -1137,7 +1142,7 @@ myContractInstance.myStateChangingMethod('someParam1', 23, {value: 200, gas: 200
 ***
 
 
-## 监听合约事件 Contract Events
+## 监听合约事件
 
 通过合约事件，可以合约状态发生变化时，让外部世界（如DApp）知道变化的发生。
 
@@ -1204,7 +1209,7 @@ myEvent.stopWatching();
 
 ***
 
-## 合约所有事件 Contract allEvents
+## 合约所有事件
 
 ```js
 var events = myContractInstance.allEvents([additionalFilterObject]);

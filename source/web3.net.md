@@ -1,5 +1,6 @@
 # 网络对象 net
 
+在使用 web3 之前，请先确保正确[引入web3.js](index.html#import-web3)。
 网络相关API，查看节点网络状态。
 
 ## web3.net.listening
